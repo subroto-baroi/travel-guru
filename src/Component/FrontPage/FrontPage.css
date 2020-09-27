@@ -1,0 +1,46 @@
+.front-container{
+    display:flex;
+}
+
+
+.menu-1{
+    border: 1px solid yellow;
+    width: 250px;
+    height: 360px;
+    border-radius:40px;
+    margin:30px;
+    background-image: url(./../../Image/Sajek.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  
+    
+}
+
+.menu-2{
+    border: 1px solid gray;
+    width: 250px;
+    height: 360px;
+    border-radius:40px;
+    margin:30px;
+    background-image: url(./../../Image/sundorbon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.menu-3{
+    border: 1px solid black;
+    width: 250px;
+    height: 360px;
+    border-radius:40px;
+    margin:30px;
+    background-image: url(./../../Image/Sreemongol.png); 
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    
+}
+h3 {
+    margin-top: 280px;
+    text-align: center;
+}
+
+
