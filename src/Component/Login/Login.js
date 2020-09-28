@@ -4,6 +4,7 @@ import "firebase/auth";
 import firebaseConfig from './firebase.config';
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router-dom';
+import SignInForm from '../SignInForm';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -63,18 +64,13 @@ const Login = () => {
     return (
         <div style={{textAlign: 'center', marginTop:'50px' }}>
 
-            <p>Please sign in with google email and password</p>
-            <form onSubmit={handleSubmit}>
-            <input type="text" name="email" onBlur={handleBlur} required/>
-            <br/> <br/>
-            <input type="password" onBlur={handleBlur} name="password" required/>
-            <br/> <br/>
-            {/* <input className = "btn btn-primary" type="submit" value="submit"/> */}
-            </form>
-
+            
+            <SignInForm/>
+            
+               <p>OR</p>
             {
                 user.isSignedIn ? <button onClick={handleSignOut}>Sign out</button>:
-                <button className = "btn btn-primary" onClick={handleSignIn}>Sign in</button>
+                <button className = "btn btn-primary" onClick={handleSignIn}>Sign in with google</button>
             }
             
             {
